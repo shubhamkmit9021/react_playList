@@ -9,12 +9,38 @@
     <title>My Page</title>
     <link rel="icon" type="image/x-icon" href="./images/google.png">
    <style>
-     body {
-        background-image: url('https://img.freepik.com/free-photo/maple-leaf-border-background-orange-watercolor-autumn-season_53876-128735.jpg?w=2000');
-      }
+        #box1 {
+            height: 900px;
+            width: 100%;
+            border: 1px solid black;
+            margin: 5px 0px;
+            /* background-color: red; */
+        }
+        #box2 {
+            height: 900px;
+            width: 100%;
+            border: 1px solid black;
+            margin: 5px 0px;
+            /* background-color: green; */
+        }
    </style>
 </head>
 <body>
-    <h1>HiI Shubham Kumar Rai</h1>
+    <div onmouseover="fun1()" onmouseout="fun2()" id="box1">
+
+    </div>
+    <div  id="box2">
+
+    </div>
 </body>
 </html>
+<script>
+    function fun1() {
+        var page = document.querySelector('#box1');
+        page.style.backgroundColor='red';
+    }
+    function fun2() {
+        var page2 = document.querySelector('#box1');
+        page2.style.backgroundColor='white';
+    }
+</script>
