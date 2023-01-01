@@ -87,3 +87,63 @@
 
 ````
 
+### HTML Images
+
+## for simple image only
+
+````
+
+<img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+````
+
+## Image Maps
+
+- With HTML image maps, you can create clickable areas on an image.
+
+````
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+
+````
+
+## HTML <picture> Element
+
+- The HTML <picture> element allows you to display different pictures for different devices or screen sizes.
+
+````
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+
+````
+
+
+### List
+
+## HTML Description Lists
+
+- A description list is a list of terms, with a description of each term.
+
+````
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>- black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+````
+
+
