@@ -6,7 +6,7 @@
 
 ### for creating object
 
-````
+````js
 var student = {
     name : "shubham",
     age : 24,
@@ -18,13 +18,13 @@ var student = {
 - bracket : objNane["key"];
 - dot notation : objName.key;
 
-````
+````js
 ex:
  student["name"];   // shubham
  student.age;     // 24
 
 ````
-````
+````js
 
 ex: 
 
@@ -41,21 +41,21 @@ console.log(student['city']);  // undefined
 
 **for updating the existing key of value**
 
-````
+````js
 student.name="Ankit";
 
 ````
 
 **for adding any new key**
 
-````
+````js
 student.city="Patna";
 
 ````
 
 **We have two method to access character**
 
-````
+````js
 
 var str = "shubham";
 
@@ -66,7 +66,7 @@ console.log(str[0]);
 
 **for print each output in new line**
 
-````
+````js
 
 var str = "abc" ;
 
@@ -79,7 +79,7 @@ for(var i = 0; i < str.length; i++)
 
 **for print as a string**
 
-````
+````js
 
 var str = "abc" ;
 
@@ -95,44 +95,143 @@ console.log(str2);
 
 ````
 
+## for print only key in object or count all key
 
-### for count the frequency of character
+**looping concept in object**
+
+
+````js
+
+// looping in object
+
+var student = {
+    name : "shubham",
+    age : 24,
+    city: 'patna',
+}
+ 
+// we can take any variable name instead of key
+
+for(var key in student) 
+{
+    console.log(key);    // print all key only
+    console.log(student[key]);   // print all value only
+}
+
+// for(var i in student )
+// {
+//     console.log(i + " : " + student[i]);  // key : value print
+// }
+
 
 ````
 
-var str = "masai";
 
-var obj = {};
+**for object we can't count length so we can use looping**
 
-for(var i = 0; i < str.length;  i++ )
-{
-   var char = str[i];
-   
-    if(obj[char] == undefined)
-        obj[char] = 1;
-    else
-        obj[char] = obj[char] + 1;
+- like we can't get length from this type
+
+````js
+
+var student = {
+    name : "shubham",
+    age : 24,
+    city: 'patna',
 }
 
-console.log(obj);   // { m: 1, a: 2, s: 1, i: 1 }
+console.log(student.length);  // this is given undefined
+
+````
+
+**but when we use array of object so we can find length**
+
+````js
+
+var student = [{
+    name : "shubham",
+    age : 24,
+    city: 'patna',
+}]
+
+console.log(student.length);  // 1
+
+
+````
+
+
+## Convert arrays to arrays of objects
+
+````js
 
 /*
+ **this is given in question**
+ex:-
 
-var str = "masai";
+var product = ["Iphone", "Ipad", "Macbook"];
+var price = [9000, 6000, 5000];
 
-var obj = {};
+ here two different arrays products and price we have to combine this arrays into object
 
-for(var i = 0; i < str.length;  i++ )
-{
-    if(obj[str.charAt(i)] === undefined)
-        obj[str.charAt(i)] = 1;
-    else
-        obj[str.charAt(i)] = obj[str.charAt(i)] + 1;
-}
-
-console.log(obj);
+ ex:-  we need to output this type
+ [
+    {product: "Iphone", price : 9000},
+    {product: "Ipad", price : 6000},
+    {product: "Macbook", price : 5000},
+ ]
 
 */
+
+// var product = ["Iphone", "Ipad", "Macbook"];
+// var price = [9000, 6000, 5000];
+
+// var data =[];
+
+// for(var i = 0; i < product.length; i++)
+// {
+//     var obj = {};
+
+//     var key = product[i];
+//     var value =price[i];
+
+//     obj[key] = value;
+
+//     data.push(obj);
+// }
+
+// console.log(data);  // [ { Iphone: 9000 }, { Ipad: 6000 }, { Macbook: 5000 } ]
+
+
+
+var product = ["Iphone", "Ipad", "Macbook"];
+var price = [9000, 6000, 5000];
+
+var data =[];
+
+for(var i = 0; i < product.length; i++)
+{
+    var obj = {};
+
+    var key = product[i];
+    var value =price[i];
+
+    obj['product'] = key;
+    obj['price'] = value
+
+    // obj.product = product[i];
+    // obj.price = price[i];
+
+    data.push(obj);
+}
+
+console.log(data);  
+
+//   [
+//     { product: 'Iphone', price: 9000 },
+//     { product: 'Ipad', price: 6000 },
+//     { product: 'Macbook', price: 5000 }
+//   ]
+
+
 
 ````
 

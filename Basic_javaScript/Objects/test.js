@@ -97,4 +97,151 @@ console.log(obj);   // { m: 1, a: 2, s: 1, i: 1 }
 */
 
 
+/*
+
+// looping in object
+
+var student = {
+    name : "shubham",
+    age : 24,
+    city: 'patna',
+}
+ 
+// we can take any variable name instead of key
+
+for(var key in student) 
+{
+    console.log(key);    // print all key only
+    console.log(student[key]);   // print all value only
+}
+
+// for(var i in student )
+// {
+//     console.log(i + " : " + student[i]);  // key : value print
+// }
+
+
+*/
+
+/*
+
+ // array of object
+
+var student = [{
+    name : "shubham",
+    age : 24,
+    city: 'patna',
+}]
+
+console.log(student.length);
+
+*/
+
+
+// Annonumous function example
+
+ // return type
+
+/*
+
+var student = {
+    name : "shubham",
+    age : 24,
+    city: 'patna',
+    print : function() {
+        return 'abc'
+    }
+}
+
+var ans = student.print();
+console.log(ans);   // abc
+
+
+
+
+// no return type
+
+var student = {
+    name : "shubham",
+    age : 24,
+    city: 'patna',
+    print : function() {
+        console.log('abc');   // abc
+    }
+}
+
+student.print();
+
+
+*/
+
+// Convert arrays to arrays of objects
+
+/*
+
+ex:-
+
+var product = ["Iphone", "Ipad", "Macbook"];
+var price = [9000, 6000, 5000];
+
+ here two different arrays products and price we have to combine this arrays into object
+
+ ex:-  we need to output this type
+ [
+    {product: "Iphone", price : 9000},
+    {product: "Ipad", price : 6000},
+    {product: "Macbook", price : 5000},
+ ]
+
+*/
+
+// var product = ["Iphone", "Ipad", "Macbook"];
+// var price = [9000, 6000, 5000];
+
+// var data =[];
+
+// for(var i = 0; i < product.length; i++)
+// {
+//     var obj = {};
+
+//     var key = product[i];
+//     var value =price[i];
+
+//     obj[key] = value;
+
+//     data.push(obj);
+// }
+
+// console.log(data);  // [ { Iphone: 9000 }, { Ipad: 6000 }, { Macbook: 5000 } ]
+
+
+
+var product = ["Iphone", "Ipad", "Macbook"];
+var price = [9000, 6000, 5000];
+
+var data =[];
+
+for(var i = 0; i < product.length; i++)
+{
+    var obj = {};
+
+    var key = product[i];
+    var value =price[i];
+
+    obj['product'] = key;
+    obj['price'] = value
+
+    // obj.product = product[i];
+    // obj.price = price[i];
+
+    data.push(obj);
+}
+
+console.log(data);  
+
+//   [
+//     { product: 'Iphone', price: 9000 },
+//     { product: 'Ipad', price: 6000 },
+//     { product: 'Macbook', price: 5000 }
+//   ]
 
