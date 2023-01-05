@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FetchData Filter</title>
+    <style>
+        #box{
+            border: 1px solid black;
+            justify-content: center;
+            margin: auto;
+            width: 50%;
+            height: max-content;
+            border-radius: 12px;
+        }
+        #box2 {
+            padding: 20px;
+            justify-content: center;
+            margin: auto;
+            width: max-content;
+        }
+        input{
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        button{
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 22px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: gray;
+            color: #fff;
+        }
+        button:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="box2">
+            <h1>Filter Example</h1>
+            <input id='inp' type="text" placeholder="Enter sk pk or ck for filter Here"> </br>
+            <button onclick="btnFun()" id="btn">Click me</button>
+            <h1 id="box3"></h1>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var data =['sk', 'pk', 'ck', 'dk', 'sk', 'pk', 'ck', 'dk', 'sk', 'pk', 'ck', 'dk']
+
+    function btnFun() {
+        var val = document.querySelector('#inp').value;
+
+        document.querySelector("#box3").innerText = val;
+
+        // var box = document.createElement('h2');
+        // box.innerText = val;
+        
+        // var displayBox = document.querySelector("#box3");
+        // displayBox.append(box);
+
+    }
+    // function btnFun() {
+    //     var val = document.querySelector("#inp").value;
+    //     console.log(val);
+    //     var ans = data.filter((el) =>{
+    //         if(el === val)
+    //             return el;
+    //     })
+       
+    //     if(ans.length===0)
+    //     {
+    //         document.querySelector("#box3").innerText = "Not Exist";
+    //     }
+    //     else
+    //     {
+    //         var mybox = document.querySelector("#box3");
+    //         mybox.innerText="";
+    //         ans.map( (el) => {
+    //             displayFun(el);
+    //         })
+    //     }
+    // }
+
+    // function displayFun(el) {
+    //     var mybox = document.querySelector("#box3");
+    //     // var list = document.createElement('list');
+    //     // list.innerHTML=`<li>${el}</li>`;
+    //     // mybox.append(list)
+    //     var heading =document.createElement('h3');
+    //     heading.innerText = el;
+    //     mybox.append(heading);
+
+    // }
+</script>
