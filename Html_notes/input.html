@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input box</title>
+    <style>
+        #btn {
+            padding:8px;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+        #box{
+            border: 2px solid black;
+            width: 60%;
+            padding: 10px;
+            margin: auto;
+        }
+        #inp {
+            padding:8px;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+        #slct {
+            padding: 6px;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+       <div style="text-align: center; margin: 10px 4px;">
+
+            <h1>OnClick Example</h1>
+            <button id="btn" onclick="clickFun()">Click Me</button>
+
+          <!-- <h1>Input Box Testing</h1>
+          <input type="text" placeholder="Enter Text Here" id="inp"> -->
+
+          <!-- <h1>OnChange Event Example</h1>
+
+          <select id="slct" onchange={selectFun}>
+            <option value="">Select One</option>
+            <option value="">Shubham</option>
+            <option value="">Ankit</option>
+          </select>
+
+          <button onclick={clickFun}>Click Me</button> -->
+
+       </div>
+    </div>
+</body>
+</html>
+
+<script>
+         function clickFun() {
+            alert("Click Fun");
+            document.querySelector(body).innerText= "Welcome";
+        }
+
+        // function selectFun() {
+        //     // var value1 = document.querySelector("#slct").value;
+        //     // console.log(value1);
+        //     // var x = document.getElementById("slct").value;
+        //     // document.getElementById("demo").innerHTML = "You selected: " + x;
+        //     alert("yes")
+        // }
+
+        
+</script>
