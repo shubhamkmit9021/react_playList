@@ -32,3 +32,37 @@ function btnFun() {
 
 
 ````
+
+
+# querySelectorAll Example
+
+````html
+
+<h1 id="firstname">Hello</h1>
+<div id="lastname">MASAI</div>
+<p id="fullname">School</p>
+
+<button onclick="resetDefaults()">RESET DEFAULTS</button>
+
+<script>
+function resetDefaults(){
+    // reset the firstname, lastname, and fullname to empty values
+
+    // var val1 = document.querySelector("#firstname");
+    // val1.innerText='';
+    // var val2 = document.querySelector("#lastname");
+    // val2.innerText='';
+    // var val3 = document.querySelector("#fullname");
+    // val3.innerText='';
+
+    var all = document.querySelectorAll("#firstname,#lastname,#fullname");
+    for(var i=0; i<all.length; i++)
+    {
+        all[i].innerText="";
+    }
+}
+
+</script>
+
+````
+
