@@ -1,9 +1,22 @@
 
+# DOM
+
+**DOM converting html or web page to object model**
+**DOM converts our whole screen tag into objects**
+
+
+# for write innerText we can use three different options : 
+ - .innerText
+ - .textContent
+ - .innerHtml
+ 
+
+
 # how to read the value of input box
 
 ````html
 <div>
-    <input id='inp' type="text" placeholder="Enter Text Here"> </br>
+    <input id='inp' type="text" placeholder="Enter Text Here"> <br />
     <button onclick="btnFun()" id="btn">Click me</button>
     <div id='box3'></div>
 </div>

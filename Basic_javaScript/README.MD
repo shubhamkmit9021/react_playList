@@ -53,6 +53,15 @@ console.log(ans);   // abc
 
 ````
 
+# for fixed decimal value
+
+````js
+
+var res = 3.3333333333
+console.log(res.toFixed(2))  // 3.33
+
+````
+
 # Convert String to Number 
 
 ````js
