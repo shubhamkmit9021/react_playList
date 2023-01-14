@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <h1>Local Storage Example</h1>
+
+    <h1 id="name"></h1>
+    <h1 id="mobile"></h1>
+
+</body>
+</html>
+<script>
+    var name = 'shubham';
+    var mobile = 9122659709;
+
+    localStorage.setItem("myName",name);
+    localStorage.setItem("myNumber",mobile);
+
+    var name1 =JSON.stringify( localStorage.getItem("myName"));
+    var mobile1 = JSON.parse( localStorage.getItem("myNumber"));
+
+    document.querySelector("#name").innerText = typeof name1;
+    document.querySelector("#mobile").innerText = typeof mobile1;
+
+
+
+    console.log(name);
+    console.log(mobile);
+
+    console.log(typeof(name));
+    console.log(typeof(mobile));
+
+
+</script>
