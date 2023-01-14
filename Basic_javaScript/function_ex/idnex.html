@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Function</title>
+    <style>
+        #btn1 {
+            background-color: black;
+            cursor: pointer;
+            color: #fff;
+            font-size: 22px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>basic Function example</h1>
+    <button onclick="fun1()" id="btn1">Click Me</button>
+    
+</body>
+</html>
+
+<script>
+
+    // function fun1() {
+    //     alert("fun1 type")
+    // }
+
+    // document.querySelector("#btn1").addEventListener("click", fun2);
+
+    // function fun2() {
+    //     alert("fun2 type")
+    // }
+
+    document.querySelector("#btn1").addEventListener("click", function() {
+       myfun();
+    })
+    
+    function myfun() {
+        alert("function working");
+    }
+
+
+    // var btn  = document.createElement('button');
+    // btn.innerText = "Click Me";
+    // btn.style.color='red';
+    // btn.style.fontSize='22px';
+    // btn.style.borderRadius='10px';
+    // btn.style.padding="6px";
+
+    // var btn2 = document.createElement('button');
+    // btn2.innerText = "Click Me";
+    // btn2.style.color='red';
+    // btn2.style.fontSize='22px';
+    // btn2.style.borderRadius='10px';
+    // btn2.style.padding="6px";
+
+    // btn2.setAttribute("id","mybtn2");
+
+    // document.querySelector("#btn1").append(btn);
+    // document.querySelector("body").append(btn2);
+
+    // var mybtn = document.querySelector("#mybtn2")
+    // mybtn.addEventListener("click", btnfun);
+
+    // function btnfun() {
+    //     alert("yes")
+    // }
+
+
+</script>
