@@ -75,3 +75,29 @@
 
 ````
 
+## Select tag example
+
+````html
+
+<select id="sortNames" onchange="handleNameSort()">
+      <option value="">Sort by Names</option>
+      <option value="ascending">Ascending</option>
+      <option value="descending">Descending</option>
+    </select>
+
+    <select id="sortSalary" onchange="handleSalarySort()">
+      <option value="">Sort by Salary</option>
+      <option value="htl">High to Low</option>
+      <option value="lth">Low to High</option>
+    </select>
+
+    <select id="filterRole" onchange="handleRoleFilter()">
+      <option value="">Filter by Role</option>
+      <option value="all">All</option>
+      <option value="FSD">FSD</option>
+      <option value="Frontend">Frontend</option>
+      <option value="Backend">Backend</option>
+    </select>
+
+  ````
+

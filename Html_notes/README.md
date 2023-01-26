@@ -51,7 +51,7 @@
 
 - simple example given below
 
-````
+```` html
 <div id="box" onmousehover="fun1()" onmouseout="fun2()" > </div>
 
 <script>
@@ -74,7 +74,7 @@
 
 -use this dircetly
 
-````
+````html
   &nbsp;
 
 ````
@@ -83,7 +83,7 @@
 
 ````
 
-<marquee behavior="scroll" direction="right" onmouseover="this.stop()" onmouseout="this.start()">
+<marquee behavior="scroll" direction="right" onmouseover="this.stop()" onmouseout="this.start()" >
 
 ````
 
@@ -91,7 +91,7 @@
 
 ## for simple image only
 
-````
+````html
 
 <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
 
@@ -101,7 +101,7 @@
 
 - With HTML image maps, you can create clickable areas on an image.
 
-````
+````html
 
 <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
 
@@ -118,7 +118,7 @@
 
 - The HTML <picture> element allows you to display different pictures for different devices or screen sizes.
 
-````
+````html
 
 <picture>
   <source media="(min-width: 650px)" srcset="img_food.jpg">
@@ -135,7 +135,7 @@
 
 - A description list is a list of terms, with a description of each term.
 
-````
+````html
 
 <dl>
   <dt>Coffee</dt>
@@ -143,6 +143,17 @@
   <dt>Milk</dt>
   <dd>- white cold drink</dd>
 </dl>
+
+````
+
+## HTML Details Tag byDefault feature
+
+````html
+
+  <details open>
+    <summary>This is heading</summary>
+    <p>This is detailed description block</p>
+  </details>
 
 ````
 
