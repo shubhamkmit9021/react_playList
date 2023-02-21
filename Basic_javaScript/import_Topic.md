@@ -1,4 +1,27 @@
+## Array destructuring
 
+````js
+let [a,b,c] = [3,4,5];
+console.log(a); // 3
+console.log(c); // 5
+
+````
+
+
+## Object Destructuring
+
+````js
+let obj = {
+ name:'sk',
+ city:'patna',
+ age:22
+}
+
+let {name,city,age} = obj;
+console.log(city)  // patna
+
+
+````
 ## closure
 
 ````js
